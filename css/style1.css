@@ -167,6 +167,41 @@ nav.navbar.navbar-default.top_header {
 }
 
 /*******************************banner**********************************/
+section.banner_shotweell {
+    display: block;
+    padding: 40px;
+    padding-bottom: 0;
+    margin: 0 auto;
+        background: #59d8fa;
+    position:relative;z-index: 9999;
+}
+section.banner_shotweell:before {
+    background-image: url('../images/left.png');
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: ' ';
+    display: block;
+   
+    height: 100%;
+    width: 114px;
+    background-repeat: no-repeat;
+}
+section.banner_shotweell:after {
+    background-image: url('../images/right.png');
+    position: absolute;
+    right: 0;
+    top: 0;
+    content: ' ';
+    display: block;
+   
+    height: 100%;
+    width: 114px;
+    background-repeat: no-repeat;
+}
+
+
+
 
 section.banner {
     display: block;
@@ -513,7 +548,7 @@ section.myhealthbanner {
 }
 
 .banner_text_health span {
-    font-size: 15px;
+    font-size: 13px;
     color: #f7f7f7;
     font-weight: normal;
     line-height: 7px;
@@ -1196,9 +1231,20 @@ section.progrm p {
     height: auto;
 }
 
+.personal_tab_mobile_health .panel-default>.panel-heading {
+    color: #333;
+    background-color: #f5f5f5;
+    border-color: transparent;
+    border-bottom: 1px solid rgba(220, 212, 213, 0.63);
+    border-top: 1px solid rgba(234, 229, 230, 0.75);
+    border-radius: 0;
+}
 
-
-
+.personal_tab_mobile_health .heading span {
+    font-family: Nunito;
+    line-height: 5px;
+    font-size: 14px;
+}
 
 
 
@@ -1359,6 +1405,23 @@ ul.nav_footer li a span {
 }
 
 @media screen and (max-width:767px) {
+    
+ .heading {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+    
+    
+  .star {
+    left: 26%;
+}  
+  .star1 {
+    right: 23%;
+}  
+    
+    
     .nav_banner_text_health ul.tabs_nav_health.nav.nav-tabs {
     padding: 0;
     border: none;
@@ -1452,6 +1515,11 @@ img.mobils_ios_ap {
 }
 
 @media screen and (max-width:680px) {
+
+ .personal_tab_mobile_health .heading h1 {
+    font-size: 26px;
+}
+    
   .my_health img {
     margin-left: 50%;
 }   
@@ -1466,6 +1534,23 @@ img.mobils_ios_ap {
 
 @media screen and (max-width:600px){
     
+    .heading {
+    width: 80%;
+    display: block;
+    margin-bottom: 30px;
+}
+    .star {
+    left: 30%;
+}  
+  .star1 {
+    right: 30%;
+}  
+    
+    
+.banner_text_health img {
+    display: none;
+}
+    
  section.myhealthbanner{
     padding: 10px 10px 0 10px;
 }    
@@ -1476,6 +1561,7 @@ img.mobils_ios_ap {
     
     .get p {
     font-size: 13px;
+        display: block;
 }
     .panel-group { width: 90%;}
    
@@ -1500,6 +1586,13 @@ img.mobils_ios_ap {
 
 }
 @media screen and (max-width:567px){
+    
+  .star {
+    left: 10%;
+}  
+  .star1 {
+    right: 2%;
+}  
     
 .logo {
     margin-top: 14px;
